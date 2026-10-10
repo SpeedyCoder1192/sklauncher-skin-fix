@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" shape-rendering="crispEdges">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2ed69e"/>
+      <stop offset="1" stop-color="#345cf0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <path fill="#000" d="M94 229h27v27h-27zM148 229h27v27h-27zM337 229h81v27h-81zM256 256h27v27h-27zM94 283h81v27h-81zM229 283h27v27h-27zM364 283h27v27h-27zM67 337h135v27h-135zM310 337h135v27h-135z"/>
+  <path fill="#fff" d="M67 175h135v27h-135zM310 175h135v27h-135zM67 202h135v27h-135zM229 202h27v27h-27zM310 202h135v27h-135zM67 229h27v27h-27zM121 229h27v27h-27zM175 229h27v27h-27zM229 229h54v27h-54zM310 229h27v27h-27zM418 229h27v27h-27zM67 256h135v27h-135zM229 256h27v27h-27zM310 256h135v27h-135zM67 283h27v27h-27zM175 283h27v27h-27zM310 283h54v27h-54zM391 283h54v27h-54zM67 310h135v27h-135zM310 310h135v27h-135z"/>
+</svg>

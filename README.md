@@ -1,15 +1,13 @@
 # Server Skins First
 
-Makes SKlauncher show the skins your server sends.
+Makes skin changing mods and plugins work on SKlauncher.
 
-SKlauncher puts everyone's SKlauncher skin on them, even when the server sends a different one. So if your server uses FabricTailor or SkinsRestorer, SKlauncher players never see those skins. You run `/skin`, it says it worked, and nothing changes.
+SKlauncher puts everyone's SKlauncher skin on them and overrides skins set by things like FabricTailor and SkinsRestorer. You run `/skin`, it says it worked, and nothing changes. This mod fixes that:
 
-With this mod installed:
+- if a player has a skin set by a skin changer, you see that one
+- if they don't, you see their SKlauncher skin like before
 
-- if the server sends a skin for a player, you see that one
-- if it doesn't, you see their SKlauncher skin like before
-
-It's client-side only and has no settings. The server doesn't need it. Other players only need it if they also use SKlauncher. On any other launcher it does nothing.
+It's client-side only and has no settings. Servers don't need it. Other players only need it if they also use SKlauncher. On any other launcher it does nothing.
 
 Works with Microsoft and SKlauncher accounts.
 
@@ -24,11 +22,11 @@ Fabric only.
 | `+26.2` | 26.1 to 26.2 |
 | `+26.3` | 26.3 |
 
-1.20.2 and older don't need it, SKlauncher doesn't replace server skins there.
+1.20.2 and older don't need it, SKlauncher doesn't replace skins there.
 
 ## How it works
 
-SKlauncher's game agent edits the code where Minecraft reads the skin a server sent and swaps in the SKlauncher one. This mod hooks the start of that code and uses the server's skin before the edit is reached. SKlauncher's own files aren't changed, so updating it doesn't break anything.
+Skin changers give a player a skin by attaching it to their profile. SKlauncher's game agent edits the code where Minecraft reads that skin and swaps in the SKlauncher one. This mod hooks the start of that code and uses the attached skin before the edit is reached. SKlauncher's own files aren't changed, so updating it doesn't break anything.
 
 Not affiliated with SKlauncher.
 

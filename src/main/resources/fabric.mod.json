@@ -3,9 +3,10 @@
 	"id": "serverskinsfirst",
 	"version": "${version}",
 	"name": "Server Skins First",
-	"description": "Shows the skins your server sends (FabricTailor, SkinsRestorer) instead of SKlauncher's. Players the server has no skin for keep their SKlauncher skin.",
+	"description": "Stops SKlauncher from replacing skins set by skin changing mods and plugins like FabricTailor and SkinsRestorer.",
 	"authors": ["SpeedyCoder1192"],
 	"license": "MIT",
+	"icon": "assets/serverskinsfirst/icon.png",
 	"contact": {
 		"sources": "https://github.com/SpeedyCoder1192/server-skins-first",
 		"issues": "https://github.com/SpeedyCoder1192/server-skins-first/issues"

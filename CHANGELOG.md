@@ -1,4 +1,4 @@
 First release.
 
-- Skins sent by the server (FabricTailor, SkinsRestorer, ...) now win over SKlauncher skins
-- Players the server sends no skin for keep their SKlauncher skin
+- Skins set by skin changing mods and plugins (FabricTailor, SkinsRestorer, ...) are no longer replaced by SKlauncher skins
+- Players without one keep their SKlauncher skin
