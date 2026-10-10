@@ -14,7 +14,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 // SKlauncher's agent swaps the skin read in this lambda for the skmedix one, so return the
 // profile's own skin before it gets there. Matched by signature, the lambda's name changes between versions
-
 @Mixin(targets = "net.minecraft.client.resources.SkinManager$1")
 abstract class SkinManagerLoaderMixin {
 	//? if >=1.21.9 {
