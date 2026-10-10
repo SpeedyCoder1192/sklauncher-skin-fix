@@ -1,19 +1,19 @@
 {
 	"schemaVersion": 1,
-	"id": "serverskinsfirst",
+	"id": "sklauncherskinfix",
 	"version": "${version}",
-	"name": "Server Skins First",
+	"name": "SKlauncher Skin Fix",
 	"description": "Stops SKlauncher from replacing skins set by skin changing mods and plugins like FabricTailor and SkinsRestorer.",
 	"authors": ["SpeedyCoder1192"],
 	"license": "MIT",
-	"icon": "assets/serverskinsfirst/icon.png",
+	"icon": "assets/sklauncherskinfix/icon.png",
 	"contact": {
-		"sources": "https://github.com/SpeedyCoder1192/server-skins-first",
-		"issues": "https://github.com/SpeedyCoder1192/server-skins-first/issues"
+		"sources": "https://github.com/SpeedyCoder1192/sklauncher-skin-fix",
+		"issues": "https://github.com/SpeedyCoder1192/sklauncher-skin-fix/issues"
 	},
 	"environment": "client",
 	"mixins": [
-		"serverskinsfirst.mixins.json"
+		"sklauncherskinfix.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.5",

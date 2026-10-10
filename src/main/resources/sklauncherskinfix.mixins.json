@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "dev.serverskinsfirst.mixin",
+	"package": "dev.sklauncherskinfix.mixin",
 	"compatibilityLevel": "JAVA_${java}",
 	"client": [
 		"CacheKeyAccessor",

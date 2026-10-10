@@ -24,4 +24,4 @@ stonecutter {
 	}
 }
 
-rootProject.name = "server-skins-first"
+rootProject.name = "sklauncher-skin-fix"

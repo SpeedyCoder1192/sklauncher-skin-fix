@@ -1,4 +1,4 @@
-package dev.serverskinsfirst.mixin;
+package dev.sklauncherskinfix.mixin;
 
 import com.mojang.authlib.minecraft.MinecraftProfileTextures;
 import com.mojang.authlib.properties.Property;
@@ -18,16 +18,16 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 abstract class SkinManagerLoaderMixin {
 	//? if >=1.21.9 {
 	@Inject(method = "*(Lnet/minecraft/client/resources/SkinManager$CacheKey;Lnet/minecraft/server/Services;)Lcom/mojang/authlib/minecraft/MinecraftProfileTextures;", at = @At("HEAD"), cancellable = true)
-	private static void serverskinsfirst$useServerSkin(@Coerce Object key, Services services, CallbackInfoReturnable<MinecraftProfileTextures> cir) {
-		Property textures = ((CacheKeyAccessor) key).serverskinsfirst$packedTextures();
+	private static void sklauncherskinfix$useProfileSkin(@Coerce Object key, Services services, CallbackInfoReturnable<MinecraftProfileTextures> cir) {
+		Property textures = ((CacheKeyAccessor) key).sklauncherskinfix$packedTextures();
 		if (textures != null) {
 			cir.setReturnValue(services.sessionService().unpackTextures(textures));
 		}
 	}
 	//?} else {
 	/*@Inject(method = "*(Lnet/minecraft/client/resources/SkinManager$CacheKey;Lcom/mojang/authlib/minecraft/MinecraftSessionService;)Lcom/mojang/authlib/minecraft/MinecraftProfileTextures;", at = @At("HEAD"), cancellable = true)
-	private static void serverskinsfirst$useServerSkin(@Coerce Object key, MinecraftSessionService sessionService, CallbackInfoReturnable<MinecraftProfileTextures> cir) {
-		Property textures = ((CacheKeyAccessor) key).serverskinsfirst$packedTextures();
+	private static void sklauncherskinfix$useProfileSkin(@Coerce Object key, MinecraftSessionService sessionService, CallbackInfoReturnable<MinecraftProfileTextures> cir) {
+		Property textures = ((CacheKeyAccessor) key).sklauncherskinfix$packedTextures();
 		if (textures != null) {
 			cir.setReturnValue(sessionService.unpackTextures(textures));
 		}

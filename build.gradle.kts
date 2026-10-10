@@ -50,7 +50,7 @@ tasks.register<Copy>("collectJar") {
 publishMods {
 	val modrinthId = property("publish.modrinth_id") as String
 	file = loomx.modJar.flatMap { it.archiveFile }
-	displayName = "Server Skins First ${property("mod.version")} ($mc)"
+	displayName = "SKlauncher Skin Fix ${property("mod.version")} ($mc)"
 	version = project.version.toString()
 	changelog = providers.gradleProperty("changelog").orElse(rootProject.file("CHANGELOG.md").readText())
 	type = if (findProperty("publish.type") == "beta") BETA else STABLE
@@ -70,7 +70,7 @@ publishMods {
 	// one release per version, same text as on Modrinth. ./release.sh fills GITHUB_TOKEN from `gh auth token`
 	github {
 		accessToken = providers.environmentVariable("GITHUB_TOKEN")
-		repository = "SpeedyCoder1192/server-skins-first"
+		repository = "SpeedyCoder1192/sklauncher-skin-fix"
 		commitish = "main"
 		tagName = project.version.toString()
 	}

@@ -1,4 +1,4 @@
-# Server Skins First
+# SKlauncher Skin Fix
 
 Makes skin changing mods and plugins work on SKlauncher.
 

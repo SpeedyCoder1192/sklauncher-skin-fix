@@ -4,7 +4,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-repo="SpeedyCoder1192/server-skins-first"
+repo="SpeedyCoder1192/sklauncher-skin-fix"
 
 # Gradle needs Java 25; use the one in ~/.jdks if nothing else is set up
 if [ -z "${JAVA_HOME:-}" ] && ! command -v java >/dev/null; then
@@ -30,7 +30,7 @@ mapfile -t nodes < <(ls versions | sort -V)
 released=$(gh release list --repo "$repo" --limit 200 --json tagName --jq '.[].tagName')
 
 echo
-echo "Server Skins First $version"
+echo "SKlauncher Skin Fix $version"
 for i in "${!nodes[@]}"; do
 	if grep -qxF "$version+${nodes[$i]}" <<<"$released"; then
 		status="(released)"
