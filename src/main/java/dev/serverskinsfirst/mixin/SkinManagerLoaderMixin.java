@@ -12,10 +12,9 @@ import org.spongepowered.asm.mixin.injection.Coerce;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-// SKlauncher's game agent rewrites this lambda so your skmedix skin replaces whatever
-// the server sent. Unpacking the server's skin here returns before that code runs.
-// With no server skin it carries on as normal, so the SKlauncher skin is still the fallback.
-// Matched by signature since lambda names shift between versions.
+// SKlauncher's agent swaps the skin read in this lambda for the skmedix one, so return the
+// server's skin before it gets there. Matched by signature, the lambda's name changes between versions
+
 @Mixin(targets = "net.minecraft.client.resources.SkinManager$1")
 abstract class SkinManagerLoaderMixin {
 	//? if >=1.21.9 {

@@ -18,7 +18,7 @@ plugins {
 
 stonecutter {
 	create(rootProject) {
-		// one build per shape of SkinManager's loader lambda, see mod.mc_fabric in each versions/*/gradle.properties
+		// each one covers a range, see versions/*/gradle.properties
 		versions("26.3", "26.2", "1.21.11", "1.20.4")
 		vcsVersion = "26.3"
 	}
