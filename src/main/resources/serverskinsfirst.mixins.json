@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "dev.serverskinsfirst.mixin",
+	"compatibilityLevel": "JAVA_${java}",
+	"client": [
+		"CacheKeyAccessor",
+		"SkinManagerLoaderMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

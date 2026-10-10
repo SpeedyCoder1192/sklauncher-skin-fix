@@ -1,0 +1,22 @@
+{
+	"schemaVersion": 1,
+	"id": "serverskinsfirst",
+	"version": "${version}",
+	"name": "Server Skins First",
+	"description": "Shows the skins your server sends (FabricTailor, SkinsRestorer) instead of SKlauncher's. Players the server has no skin for keep their SKlauncher skin.",
+	"authors": ["SpeedyCoder1192"],
+	"license": "MIT",
+	"contact": {
+		"sources": "https://github.com/SpeedyCoder1192/server-skins-first",
+		"issues": "https://github.com/SpeedyCoder1192/server-skins-first/issues"
+	},
+	"environment": "client",
+	"mixins": [
+		"serverskinsfirst.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "${minecraft}",
+		"java": ">=${java}"
+	}
+}
