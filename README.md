@@ -7,6 +7,8 @@ SKlauncher puts everyone's SKlauncher skin on them and overrides skins set by th
 - if a player has a skin set by a skin changer, you see that one
 - if they don't, you see their SKlauncher skin like before
 
+![Same /skin command without and with the mod](https://raw.githubusercontent.com/SpeedyCoder1192/sklauncher-skin-fix/main/docs/before-after.png)
+
 It's client-side only and has no settings. Servers don't need it. Other players only need it if they also use SKlauncher. On any other launcher it does nothing.
 
 Works with Microsoft and SKlauncher accounts.
@@ -21,8 +23,6 @@ Fabric only.
 | `+1.21.11` | 1.21.9 to 1.21.11 |
 | `+26.2` | 26.1 to 26.2 |
 | `+26.3` | 26.3 |
-
-1.20.2 and older don't need it, SKlauncher doesn't replace skins there.
 
 ## How it works
 
